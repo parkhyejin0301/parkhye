@@ -1,0 +1,74 @@
+/* 초기화 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, button
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+​
+button {outline: 0;}
+button, a { border: 1px solid transparent;  cursor: pointer;}
+a {text-decoration: none; line-height: 130%;}
+/* exmaru 직접추가 */
+.em-ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+* { word-break: keep-all; }
+*,
+*::after,
+*::before { box-sizing: border-box; }
+form { width: 100%; }
+
+/* 폰트 */
+/*애플산돌고딕 */
+@font-face { font-family: 'AppleSDGothicNeo'; src: url('/assets/fonts/AppleSDGothic/AppleSDGothicNeoB.ttf'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'AppleSDGothicNeo'; src: url('/assets/fonts/AppleSDGothic/AppleSDGothicNeoEB.ttf'); font-weight: 800; font-style: normal; }
+@font-face { font-family: 'AppleSDGothicNeo'; src: url('/assets/fonts/AppleSDGothic/AppleSDGothicNeoH.ttf'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'AppleSDGothicNeo'; src: url('/assets/fonts/AppleSDGothic/AppleSDGothicNeoL.ttf'); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'AppleSDGothicNeo'; src: url('/assets/fonts/AppleSDGothic/AppleSDGothicNeoM.ttf'); font-weight: 400; font-style: normal; }
+/*Camton*/
+@font-face { font-family: 'Campton'; src: url('/assets/fonts/campton/campton-bold.otf'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Campton'; src: url('/assets/fonts/campton/campton-extrabold.otf'); font-weight: 800; font-style: normal; }
+@font-face { font-family: 'Campton'; src: url('/assets/fonts/campton/campton-light.otf'); font-weight: 200; font-style: normal; }
+@font-face { font-family: 'Campton'; src: url('/assets/fonts/campton/campton-medium.otf'); font-weight: 400; font-style: normal; }
+body { font-family: AppleSDGothicNeo, Campton, sans-serif; font-size: 16px; font-weight: 400; }
+%korean { font-family: 'AppleSDGothicNeoM' !important; }
+%english { font-family: 'Campton' !important; }
+
+

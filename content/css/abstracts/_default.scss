@@ -1,0 +1,135 @@
+//default.scss
+//----------------------------------------------//
+/*                     컬러                     */
+//----------------------------------------------//
+$black_0 : #000;
+$black_1 : #111;
+$black_3 : #333;
+$black_5 : #555;
+$black_7 : #777; 
+$black_9 : #999;
+$black_a : #aaa;
+$black_c : #ccc ;
+$black_e : #e6e6e6;
+$black_f0 : #f0f0f0;
+$black_f6 : #f6f6f6; 
+$white : #ffffff;
+$point_red : #ff0000;
+$point_blue : #353cdd;
+
+.red{ color: $point_red; }
+.blue{ color: $point_blue; }
+
+//----------------------------------------------//
+/*                 공간 커스텀                   */
+//----------------------------------------------//
+.mt-30{ margin-top: 30px; }
+.mt-60{ margin-top: 60px; }
+.mt-100{ margin-top: 100px; }
+
+//----------------------------------------------//
+/*                      정렬                    */
+//----------------------------------------------//
+// 말줄임
+%text-one{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+//수직 말줄임
+%text-several{
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+}
+// -webkit-line-clamp: 3;
+
+//센터 정렬
+%d-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//양끝 정렬
+%d-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+//앞 정렬
+%d-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+//끝 정렬
+%d-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+//----------------------------------------------//
+/*                 페이징 커스텀                 */
+//----------------------------------------------//
+.pagination-wrap{
+    margin-top: 80px;
+    ul{
+        @extend %d-center;
+        li{
+            padding: 0 10px;
+            &.arrow{
+                a{
+                    img{
+                        transform: translateY(2px);
+                    }
+                }
+            }
+            &.active{
+                a{
+                    color: $black_1;
+                    font-weight: 700;
+                }
+            }
+            a{
+                color: $black_a;
+                @extend %english;
+                font-size: 15px;
+            }
+        }
+    }
+}
+//----------------------------------------------//
+/*               back-drop 커스텀                */
+//----------------------------------------------//
+.back-drop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+.back-drop-done{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    display: none;
+    &.active{
+        display: block;
+    }
+}

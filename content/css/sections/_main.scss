@@ -1,0 +1,16 @@
+.header-nav{
+    ul{
+        @extend %d-end;
+        li{
+            padding: 0 5%;
+            a{
+                @extend %english;
+                text-transform: uppercase;
+                font-size: 2rem;
+                color: $black_3;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+        }
+    }
+}
