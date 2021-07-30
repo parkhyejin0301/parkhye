@@ -36,8 +36,8 @@ $point_blue : #353cdd;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-//수직 말줄임
-%text-several{
+//수직 말줄임 -두줄
+%text-vertical-2{
     word-break: break-all;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -45,8 +45,19 @@ $point_blue : #353cdd;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     white-space: initial;
+    -webkit-line-clamp: 2;
 }
-// -webkit-line-clamp: 3;
+//수직 말줄임 -세줄
+%text-vertical-3{
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+    -webkit-line-clamp: 3;
+}
 
 //센터 정렬
 %d-center{
